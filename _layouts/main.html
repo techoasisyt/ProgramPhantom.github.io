@@ -13,10 +13,46 @@
 
     <header>
       <div class="container">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        <h1>Tech Oasis</h1>
+        <h2>The tech enthusiasts</h2>
       </div>
     </header>
+
+    <div class="flex-container">
+      <div>
+         <button class="tabbutton" onclick="window.location.href = 'index.html'">
+          <p>
+              Home
+          </p>
+        </button>
+      </div>
+
+      <div>
+          <button class="tabbutton" onclick="window.location.href = 'about.md'">
+           <p>
+               About
+           </p>
+         </button>
+       </div>
+
+       <div>
+          <button class="tabbutton">
+           <p>
+               Projects
+           </p>
+         </button>
+       </div>
+
+       <div>
+          <button class="tabbutton">
+           <p>
+               Videos
+           </p>
+         </button>
+       </div>
+
+    </div>
+
 
     <div class="container">
       <section id="main_content">

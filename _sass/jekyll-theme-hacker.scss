@@ -20,9 +20,9 @@ body {
 /* General & 'Reset' Stuff */
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 section {
@@ -31,7 +31,7 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px;
+  /*margin: 0 0 20px;*/
 }
 
 li {
@@ -47,15 +47,16 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 1px dashed $conifer; //header;
+  border-bottom: 3px solid $conifer; //header;
   padding: 20px 0;
-  margin: 0 0 40px 0;
+  /*margin: 0 20px 0 0;*/
+  justify-content: center;
 }
 
 header h1 {
-  font-size: 30px;
+  font-size: 50px;
   line-height: 1.5;
-  margin: 0 0 0 -40px;
+  margin: 0 20px;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: $conifer;//$header;
@@ -66,16 +67,60 @@ header h1 {
   -webkit-font-smoothing: antialiased;
 }
 
-header h1:before {
-  content: "./ ";
-  font-size: 24px;
-}
+/*header h1:before {
+  content: ">>> ";
+  font-size: 35px;
+}*/
 
 header h2 {
   font-size: 18px;
   font-weight: 300;
   color: #666;
+  margin: 0 20px 20px;
 }
+
+.flex-container {
+  display: flex;
+  margin: 0 10px;
+  text-align: center;
+ }
+
+.flex-container > div {
+  margin: 0 10px;
+  padding: 0px;
+  background-color: #b5e853;
+  color: #211A1D;
+  bottom: 0px;
+  border-radius: 0px 0px 10px 10px;
+  /*width: 10%;
+   I tried to use a border to make the div to go to the bottom of the flex container
+  border-style: hidden;
+  border-bottom-style: solid;
+  border-color: #EDF2F4;
+  border-width: 1px;               */
+}
+
+.tabbutton {
+  background-color: rgba(0, 0, 0, 0);
+  color: #211A1D;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+  margin: auto;
+  text-decoration: none;
+  /* I tried to use a border to make the div to go to the bottom of the flex container
+  border-style: hidden;
+  border-bottom-style: solid;
+  border-color: #EDF2F4;
+  border-width: 1px; */
+}
+
+  .tabbutton > p {
+  font-size: 20px;
+  margin: 0px;
+}
+
+
 
 #downloads .btn {
   display: inline-block;
