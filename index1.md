@@ -32,6 +32,10 @@ var fun = function lang(l) {
 
 ```python
 print("Hello World")
+# This is a comment LOL
+
+if 1 == 1:
+    print("Buddy")
 ```
 
 ```ruby

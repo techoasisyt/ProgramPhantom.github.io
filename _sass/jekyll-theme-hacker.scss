@@ -6,6 +6,7 @@ $body-foreground: $gallery !default;
 $header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $silver-chalice !default;
+$footer-color: $conifer !default;
 
 body {
   margin: 0;
@@ -112,7 +113,7 @@ header h2 {
   color: #211A1D;
   border: none;
   border-radius: 10px 10px 0px 0px;
-  padding: 20px;
+  padding: 10px 20px;
   margin: auto;
   text-decoration: none;
   /* I tried to use a border to make the div to go to the bottom of the flex container
@@ -304,3 +305,17 @@ a {
 .cf {
   zoom:1;
 }
+
+.footer {
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $footer-color;
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-family: Arial, Verdana, sans-serif;
+  }
