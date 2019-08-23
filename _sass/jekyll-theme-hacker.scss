@@ -8,6 +8,16 @@ $blockquote-color: $silver-chalice !default;
 $blockquote-border: $silver-chalice !default;
 $footer-color: $conifer !default;
 
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #009999;
+}
+
+::selection {
+  color: white; 
+  background: #009999;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -48,8 +58,7 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 3px solid #009999;
-  border-bottom-color: #009999;
+  border-bottom: 8px solid #009999;
   padding: 0;
   line-height: 0;
   /*margin: 0 20px 0 0;*/
@@ -93,10 +102,13 @@ header h2 {
   text-align: center;
  }
 
+
 .flex-container > div {
   margin: 0 10px;
   padding: 0px;
   background-color: #009999;
+  border: 3px solid #000000;
+  border-top-color: #009999;
   color: #211A1D;
   bottom: 0px;
   border-radius: 0px 0px 10px 10px;
@@ -110,6 +122,7 @@ header h2 {
 
 .tabbutton {
   background-color: rgba(0, 0, 0, 0);
+  border: 8px solid #000000;
   color: #211A1D;
   border: none;
   border-radius: 10px 10px 0px 0px;
@@ -200,6 +213,7 @@ blockquote {
   color: $blockquote-color;
   padding-left: 10px;
   border-left: 1px dotted $blockquote-border;
+  background-color: rgba(126, 107, 107, 0.281)
 }
 
 pre {

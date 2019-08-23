@@ -108,6 +108,18 @@ end
 
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
+# Image
+
+![Icon](assets\images\Icon1.jpg)
+
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+* Bullet point
+
+`boxy`
+
 
 ### Definition lists can be used with HTML syntax.
 
