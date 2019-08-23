@@ -7,6 +7,27 @@ $header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $silver-chalice !default;
 $footer-color: $conifer !default;
+$hover-color: $tech-red !default;
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(17, 92, 17);
+}
+
+/* mouse over link */
+a:hover {
+  color: $tech-red;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
 
 ::-moz-selection { /* Code for Firefox */
   color: white;
@@ -18,12 +39,39 @@ $footer-color: $conifer !default;
   background: #009999;
 }
 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
 body {
   margin: 0;
   padding: 0;
   background: $body-background url("../images/bkg.png") 0 0;
   color: $body-foreground;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   width: 100%;
@@ -156,7 +204,9 @@ header h2 {
 #main_content {
   width: 100%;
   -webkit-font-smoothing: antialiased;
+
 }
+
 section img {
   max-width: 100%
 }
