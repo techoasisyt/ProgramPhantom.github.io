@@ -5,7 +5,7 @@ $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
 $header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
-$blockquote-border: $dove-grey !default;
+$blockquote-border: $silver-chalice !default;
 
 body {
   margin: 0;
@@ -15,14 +15,14 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  width: 100%;
 }
 
 /* General & 'Reset' Stuff */
 
 .container {
-  width: 100%;
-  max-width: 1000px;
-  /*margin: 0 auto;*/
+  margin: 0;
+  padding: 30px 30px;
 }
 
 section {
@@ -31,11 +31,11 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  /*margin: 0 0 20px;*/
+  margin: 0 0 20px;
 }
 
 li {
-  line-height: 1.4 ;
+  line-height: 2;
 }
 
 /* Header, <header>
@@ -47,10 +47,17 @@ li {
 header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 3px solid $conifer; //header;
-  padding: 20px 0;
+  border-bottom: 3px solid #009999;
+  border-bottom-color: #009999;
+  padding: 0;
+  line-height: 0;
   /*margin: 0 20px 0 0;*/
-  justify-content: center;
+  /*justify-content: center;*/
+}
+
+.banner {
+  width: 100%;
+
 }
 
 header h1 {
@@ -88,7 +95,7 @@ header h2 {
 .flex-container > div {
   margin: 0 10px;
   padding: 0px;
-  background-color: #b5e853;
+  background-color: #009999;
   color: #211A1D;
   bottom: 0px;
   border-radius: 0px 0px 10px 10px;
@@ -118,6 +125,7 @@ header h2 {
   .tabbutton > p {
   font-size: 20px;
   margin: 0px;
+  color: white;
 }
 
 
@@ -195,10 +203,10 @@ blockquote {
 
 pre {
   background: rgba(0, 0, 0, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 10px;
   font-size: 16px;
-  color: #b5e853;
+  color: #009999;
   border-radius: 2px;
   word-wrap: normal;
   overflow: auto;
@@ -221,7 +229,7 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed #b5e853;
+  border-bottom: 1px dashed #009999;
   padding: 5px 10px;
 }
 
@@ -232,8 +240,8 @@ td {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed #b5e853;
-  color: #b5e853;
+  border-bottom: 1px dashed #009999;
+  color: #009999;
 }
 
 /* Buttons
