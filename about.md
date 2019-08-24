@@ -32,8 +32,6 @@ As for the text, we went on the website "Da Font" and found two fonts we liked. 
 ---
 
 
-
-
 ## Why we started
 
 ---
@@ -57,6 +55,7 @@ On our videos you will find us doing lost of different things such as
 * Programming tutorials
 * Computer building videos
 * Other tutorials
+* Reviews
 * Computer Science revision help
 * And much, much more, anything we get interested in really!
 
