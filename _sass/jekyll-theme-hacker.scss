@@ -198,6 +198,12 @@ header h2 {
   color: white;
 }
 
+@media screen and (max-device-width: 480px) {
+  .tabbutton > p {
+    font-size: 10px;
+  }
+}
+
 
 
 #downloads .btn {
