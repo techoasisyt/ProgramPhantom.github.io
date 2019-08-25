@@ -9,26 +9,6 @@ $blockquote-border: $silver-chalice !default;
 $footer-color: $conifer !default;
 $hover-color: $tech-red !default;
 
-/* unvisited link */
-a:link {
-  color: green;
-}
-
-/* visited link */
-a:visited {
-  color: rgb(17, 92, 17);
-}
-
-/* mouse over link */
-a:hover {
-  color: $tech-red;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
-
 ::-moz-selection { /* Code for Firefox */
   color: white;
   background: #009999;
@@ -45,17 +25,13 @@ a:active {
   width: 50px;
   text-align: center;
   text-decoration: none;
-  
-  a:link {
-    color: white;
-  }
-
-  a:visited {
-    color: blue;
-  }
 }
 
-fa > a:link {
+fa >\\ a:link {
+  color: white;
+}
+
+fa >\\ a:hover {
   color: white;
 
 }
@@ -77,6 +53,25 @@ fa > a:link {
 .fa-twitter {
   background: #55ACEE;
   color: white;
+}
+
+a:link {
+  color: rgb(47, 180, 47);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(0, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: $tech-red;
+}
+
+/* selected link */
+a:active {
+  color: blue;
 }
 
 body {
